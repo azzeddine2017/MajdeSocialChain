@@ -1,0 +1,96 @@
+# ==============================================================================
+# Mejde (SocialChain) - .gitignore
+# ==============================================================================
+
+# Node & Package Managers
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+package-lock.json.bak
+
+# Build Outputs & Bundles
+dist/
+build/
+release/
+frontend/dist/
+out/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+
+# Embedded Databases & Ephemeral Storage
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+social.db
+social.db-shm
+social.db-wal
+storage/blobs/*
+!storage/blobs/.gitkeep
+
+# Ring Compilation & Native Artifacts
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.dll
+*.so
+*.dylib
+*.ringo
+ring_output.txt
+
+# Android Build Artifacts & SDK/NDK Caches
+.ring2apk.hash
+*.apk
+*.aab
+*.ap_
+*.dex
+android/.gradle/
+android/build/
+android/local.properties
+android/app/build/
+android/app/.cxx/
+android/assets/
+android/res/
+.cxx/
+
+# Logs & Debugging
+*.log
+logs/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+*.jks
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
